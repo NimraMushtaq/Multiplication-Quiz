@@ -1,0 +1,62 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;/*Size of body= Size of Screen*/
+    background-color: yellow;
+    font-family:cursive;
+    text-align: center;
+}
+.form{
+    background-color: whitesmoke;
+    padding: 20px;
+    /* horizontal shadow,vertical shadow, radius,transparency*/
+    /*rgb(c,c,c  alpha value 30% percent of opacity/transparency*/
+    box-shadow: 0 4px 8px rgb(0,0,0,.3);
+    border-radius: 10px;
+    /* margin: 20px; */
+}
+.input{
+    /* to fill input on whole line and bring submit button to next line */
+    display: block;
+    width: 100%;
+    box-sizing: border-box;/* Same space on left and right */
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    border: solid 2px brown;
+    color: brown;
+}
+.input::placeholder{
+    color:lightgray;
+    font-family: cursive;
+}
+.btn{
+    background-color: green;
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 5px;
+     /* horizontal shadow,vertical shadow, radius,transparency*/
+    /*rgb(c,c,c  alpha value 30% percent of opacity/transparency*/
+    box-shadow: 0 4px 8px rgb(0,0,0,.3);
+    box-shadow: 0 2px 4px rgb(0,0,0,.3);
+    cursor: pointer;
+}
+.btn:hover{
+    filter: brightness(.8);
+}
+.score{
+    color: brown;
+    text-align: right;
+}
